@@ -1,0 +1,477 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: normal;
+  font-family: "Pretendard", sans-serif;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section 배경색 (필요시 조정) */
+.section1 {
+  background: #000000;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10%;
+  margin-top: 14%;
+  z-index: 20;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15vw;
+  color: #e91514;
+  position: relative;
+  letter-spacing: -0.8vw;
+}
+
+.title-o {
+  font-family: "Luxurious Script";
+  font-size: 26vw;
+  color: #e91514;
+  -webkit-text-stroke: 0.15vw #000;
+  position: relative;
+  z-index: 10;
+  margin-right: -1.3vw;
+  top: 2vw;
+}
+
+.odyssey-container {
+  margin-top: -13vw;
+  margin-left: 1vw;
+}
+
+.space-row {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.small-box {
+  background-color: black;
+  color: white;
+  padding: 0.7vw;
+  max-width: 31.5vw;
+  margin-top: 1vw;
+}
+
+.small-title {
+  font-size: 1.7vw;
+  display: block;
+  margin-bottom: -0.5vw;
+}
+
+.small-text {
+  font-size: 1vw;
+  line-height: 1.5;
+  display: block;
+}
+
+.section2 {
+  background: #ff8585;
+  width: 90vw;
+}
+.section3 {
+  background: #1982c4;
+  height: 100vh;
+  width: 80vw;
+}
+.section4 {
+  background: #6a4c93;
+  height: 100vh;
+  width: 100vw;
+}
+.section5 {
+  background: #ff8585;
+}
+
+.section6 {
+  background: #1982c4;
+}
+
+.section7 {
+  background: #08ff56;
+}
+
+.section8 {
+  background: #ff8585;
+  height: 100vh;
+  width: 60vw;
+}
+
+.section9 {
+  background: #1982c4;
+}
+
+.section10 {
+  background: #08ff56;
+}
+
+.section11 {
+  background: #6a4c93;
+}
+
+.main-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.earth-bg {
+  position: fixed;
+  margin-top: 2vw;
+  margin-left: 27vw;
+  width: 48vw;
+  z-index: 11;
+  pointer-events: none;
+}
+
+.scene {
+  position: relative;
+}
+
+.ship1-wrapper {
+  position: sticky;
+  top: 40%;
+  left: 47vw;
+  margin-left: -790vw; /* 기존 너 설정 유지 */
+  width: fit-content;
+  height: fit-content;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.ship1 {
+  width: 12vw;
+}
+
+.ship-overlay-box {
+  position: absolute;
+  top: -5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.ship1-text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 8vw;
+  color: #e91514;
+  text-align: center;
+  padding-bottom: 10vw;
+  position: relative;
+  top: -15vw;
+}
+
+.ship1-bottom-text {
+  margin-top: -20vw;
+}
+
+.ship1-text2 {
+  font-size: 1vw;
+  color: white;
+  background-color: black;
+  padding: 0.7vw;
+  margin-top: 1vw;
+  position: relative;
+  z-index: 11;
+}
+
+.ship1-text3 {
+  font-size: 1vw;
+  color: white;
+  background-color: black;
+  padding: 0.7vw;
+  max-width: 32vw;
+  margin-top: 1vw;
+  position: relative;
+  z-index: 11;
+  border-collapse: collapse;
+}
+.ship1-text3 td {
+  padding: 0.5vw;
+}
+
+.ship-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.ship2 {
+  position: sticky;
+  width: 11.5vw;
+  margin-left: -270vw;
+  left: 47vw;
+  top: 44%;
+  z-index: 1;
+}
+
+.ship3 {
+  position: sticky;
+  width: 11.5vw;
+  margin-left: -80vw;
+  left: 47vw;
+  top: 40%;
+  z-index: 1;
+}
+
+.moon-section {
+  position: relative;
+}
+.moon {
+  position: relative;
+  margin-left: 100%;
+  height: 28vw;
+  z-index: 2;
+}
+
+.overlay-box {
+  position: fixed; /* ✅ 고정 위치 */
+  top: 0%;
+  left: 0%;
+  color: white;
+  z-index: 9999; /* 화면 맨 위 */
+  display: none;
+}
+
+.left-container {
+  position: fixed;
+  top: 34%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.planet-title-container {
+  margin-left: 12%;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: -17vw;
+}
+
+.planet-title1 {
+  font-family: "Luxurious Script";
+  font-size: 26vw;
+  color: #e91514;
+  -webkit-text-stroke: 0.15vw #000;
+  position: relative;
+  z-index: 10;
+  margin-right: -1.3vw;
+}
+
+.planet-text-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.planet-small-img {
+  width: 11vw;
+}
+
+.planet-big-img {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: auto;
+  max-height: 100vh;
+}
+
+.planet-text1 {
+  font-size: 1vw;
+  color: white;
+  background-color: black;
+  padding: 0.7vw;
+  max-width: 32vw;
+  line-height: 1.5;
+}
+
+.planet-text2 {
+  font-size: 1vw;
+  color: white;
+  background-color: black;
+  padding: 0.7vw;
+  max-width: 32vw;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+
+.planet-text2 td {
+  padding: 0.6vw;
+}
+
+/* 캐러셀 전체 */
+.planet-carousel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 35vw;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* 라디오 버튼 숨김 */
+.planet-carousel input[type="radio"] {
+  display: none;
+}
+
+/* 이미지들 묶음 */
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+/* 각 이미지 슬라이드 */
+.carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 슬라이드 위치 제어 */
+#moon1:checked ~ .carousel-track {
+  transform: translateX(0%);
+}
+#moon2:checked ~ .carousel-track {
+  transform: translateX(-100%);
+}
+#moon3:checked ~ .carousel-track {
+  transform: translateX(-200%);
+}
+
+/* 화살표 버튼 공통 */
+.carousel-arrows {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.carousel-arrows label {
+  width: 3vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.arrow-img {
+  height: 3vw;
+  width: auto;
+  display: block;
+}
+
+.arrow-img.flipped {
+  transform: scaleX(-1);
+}
+
+/* 해당 슬라이드일 때만 보이게 */
+#moon1:checked ~ .arrow-1,
+#moon2:checked ~ .arrow-2,
+#moon3:checked ~ .arrow-3 {
+  display: flex;
+}
+
+.mars {
+  position: absolute;
+  margin-top: -18vw;
+  right: 78%;
+  height: 34vw;
+  z-index: 2;
+}
+
+.jupiter {
+  position: absolute;
+  margin-top: -25vw;
+  right: 78%;
+  height: 50vw;
+  z-index: 2;
+}
+
+.saturn {
+  position: absolute;
+  margin-top: -20vw;
+  right: 55%;
+  height: 40vw;
+  z-index: 2;
+}
+
+.uranus {
+  position: absolute;
+  margin-top: -20vw;
+  right: 65%;
+  height: 40vw;
+  z-index: 2;
+}
+
+.neptune {
+  position: absolute;
+  margin-top: -20vw;
+  right: 78%;
+  height: 40vw;
+  z-index: 2;
+}
+
+.pluto {
+  position: absolute;
+  margin-top: -14vw;
+  right: 84%;
+  height: 28vw;
+  z-index: 2;
+}

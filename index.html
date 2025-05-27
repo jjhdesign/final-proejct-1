@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Space Odyssey</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scroll-container" id="scroll-container">
+      <img src="./img/bg.png" class="main-bg" />
+
+      <!-- Section 1 -->
+      <section class="section1">
+        <img src="./img/earth.png" class="earth-bg" />
+        <div class="title-container">
+          <div class="space-row">
+            <span class="title">SPACE</span>
+            <div class="small-box">
+              <span class="small-title">우리는 얼마나 멀리까지 나아갔을까.</span
+              ><br />
+              <span class="small-text">
+                지구에서 시작된 탐사의 궤적은 수천만 킬로미터를 넘어 우주 깊숙한
+                곳까지 이어졌습니다. 이 사이트는 인류가 보낸 주요 탐사선의
+                발자취를 따라, 우리의 여정이 얼마나 광활한지를 시각적으로
+                보여줍니다. 스크롤을 따라 펼쳐지는 우주는 시간이고, 거리이며,
+                우리 도전의 기록입니다.
+              </span>
+            </div>
+          </div>
+          <div class="odyssey-container">
+            <span class="title-o">O</span>
+            <span class="title">dyssey</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section2">
+        <div class="ship1-wrapper">
+          <img src="./img/ship1.png" class="ship1" id="ship1" />
+          <div class="ship-overlay-box hidden" id="ship1Overlay">
+            <p class="ship1-text">577KM</p>
+            <div class="ship1-bottom-text"></div>
+            <span class="ship1-text2">Sputnik 1</span>
+            <table class="ship1-text3">
+              <tr>
+                <td>국가</td>
+                <td>소련(USSR)</td>
+              </tr>
+              <tr>
+                <td>발사 일자</td>
+                <td>1957년 10월 4일</td>
+              </tr>
+              <tr>
+                <td>임무 기간</td>
+                <td>약 92일간 궤도 유지</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section3">
+        <img src="./img/moon.png" class="moon" id="moon" />
+
+        <div class="overlay-box" id="overlayBox">
+          <div class="left-container">
+            <div class="planet-title-container">
+              <span class="planet-title1">M</span>
+              <p class="title">oon</p>
+            </div>
+            <div class="planet-text-box">
+              <img src="./img/moon2.png" class="planet-small-img" />
+              <p class="planet-text1">
+                달은 인류가 지구 밖으로 나가 발을 디딘 첫 번째 천체입니다.
+                대기가 없어 운석 충돌 흔적이 고스란히 남아 있고, 지구를 돌며
+                항상 같은 면만을 보여주는 독특한 특징을 가지고 있습니다.
+              </p>
+            </div>
+            <table class="planet-text2">
+              <tbody>
+                <tr>
+                  <td>반지름</td>
+                  <td style="padding-left: 32px">1,737km</td>
+                </tr>
+                <tr>
+                  <td>대기 구성</td>
+                  <td style="padding-left: 32px">
+                    매우 희박한 외기권 (헬륨, 네온, 수소 등)
+                  </td>
+                </tr>
+                <tr>
+                  <td>자전 주기</td>
+                  <td style="padding-left: 32px">약 27.3일</td>
+                </tr>
+                <tr>
+                  <td>공전 주기</td>
+                  <td style="padding-left: 32px">약 27.3일</td>
+                </tr>
+                <tr>
+                  <td>평균 온도</td>
+                  <td style="padding-left: 32px">-173°C ~ 127°C</td>
+                </tr>
+                <tr>
+                  <td>위성 개수</td>
+                  <td style="padding-left: 32px">지구의 위성</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="planet-carousel">
+            <!-- 슬라이드 컨트롤 -->
+            <input type="radio" name="moon-slide" id="moon1" checked />
+            <input type="radio" name="moon-slide" id="moon2" />
+            <input type="radio" name="moon-slide" id="moon3" />
+
+            <!-- 슬라이드 이미지 묶음 -->
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="./img/moon3-1.png" /></div>
+              <div class="carousel-slide"><img src="./img/moon3-2.png" /></div>
+              <div class="carousel-slide"><img src="./img/moon3-3.png" /></div>
+            </div>
+
+            <!-- 좌우 화살표 버튼 -->
+            <div class="carousel-arrows arrow-1">
+              <label for="moon3" class="prev">
+                <img src="./img/arrow.png" class="arrow-img" />
+              </label>
+              <label for="moon2" class="next">
+                <img src="./img/arrow.png" class="arrow-img flipped" />
+              </label>
+            </div>
+
+            <div class="carousel-arrows arrow-2">
+              <label for="moon1" class="prev">
+                <img src="./img/arrow.png" class="arrow-img" />
+              </label>
+              <label for="moon3" class="next">
+                <img src="./img/arrow.png" class="arrow-img flipped" />
+              </label>
+            </div>
+
+            <div class="carousel-arrows arrow-3">
+              <label for="moon2" class="prev">
+                <img src="./img/arrow.png" class="arrow-img" />
+              </label>
+              <label for="moon1" class="next">
+                <img src="./img/arrow.png" class="arrow-img flipped" />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="ship-container">
+          <img src="./img/ship2.png" class="ship2" />
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section4">
+        <img src="./img/ship3.png" class="ship3" />
+      </section>
+      <!-- Section 5 -->
+      <section class="section5">
+        <div><img src="./img/mars.png" class="mars" /></div>
+        <img src="./img/ship4.png" class="ship3" />
+      </section>
+      <!-- Section 6 -->
+      <section class="section6">
+        <div><img src="./img/jupiter.png" class="jupiter" /></div>
+        <img src="./img/ship5.png" class="ship3" />
+      </section>
+      <!-- Section 7 -->
+      <section class="section7">
+        <div><img src="./img/saturn.png" class="saturn" /></div>
+        <img src="./img/ship6.png" class="ship3" />
+      </section>
+      <!-- Section 8 -->
+      <section class="section8">
+        <div><img src="./img/uranus.png" class="uranus" /></div>
+        <img src="./img/ship7.png" class="ship3" />
+      </section>
+      <!-- Section 9 -->
+      <section class="section9">
+        <div><img src="./img/neptune.png" class="neptune" /></div>
+        <img src="./img/ship7.png" class="ship3" />
+      </section>
+      <!-- Section 10 -->
+      <section class="section10">
+        <div><img src="./img/pluto.png" class="pluto" /></div>
+        <img src="./img/ship8.png" class="ship3" />
+      </section>
+      <!-- Section 11 -->
+      <section class="section11"></section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollContainer = document.getElementById("scroll-container");
+        const earth = document.querySelector(".earth-bg");
+
+        let currentScroll = 0;
+        let targetScroll = 0;
+        const scrollSpeed = 1.5;
+        const ease = 0.1;
+
+        function animateScroll() {
+          currentScroll += (targetScroll - currentScroll) * ease;
+          scrollContainer.scrollLeft = currentScroll;
+
+          const vw = window.innerWidth;
+          const trigger = 0.6 * vw; // adjust here
+
+          if (currentScroll > trigger) {
+            earth.style.position = "fixed";
+            earth.style.transform = `translateX(-${currentScroll - trigger}px)`;
+          } else {
+            earth.style.transform = "translateX(0)";
+          }
+
+          requestAnimationFrame(animateScroll);
+        }
+
+        window.addEventListener(
+          "wheel",
+          (e) => {
+            e.preventDefault();
+            targetScroll += e.deltaY * scrollSpeed;
+            targetScroll = Math.max(
+              0,
+              Math.min(
+                targetScroll,
+                scrollContainer.scrollWidth - scrollContainer.clientWidth
+              )
+            );
+          },
+          { passive: false }
+        );
+
+        // ✅ ship1 오버레이 토글
+        const ship1 = document.getElementById("ship1");
+        const ship1Overlay = document.getElementById("ship1Overlay");
+
+        ship1.addEventListener("click", () => {
+          ship1Overlay.classList.toggle("hidden");
+        });
+
+        // ✅ moon 오버레이
+        const moon = document.getElementById("moon");
+        const overlayBox = document.getElementById("overlayBox");
+
+        moon.addEventListener("click", () => {
+          if (overlayBox.style.display === "block") {
+            overlayBox.style.display = "none";
+          } else {
+            overlayBox.style.display = "block";
+          }
+        });
+
+        animateScroll();
+      });
+    </script>
+  </body>
+</html>
